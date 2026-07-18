@@ -13,6 +13,18 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="NGL_LIB">
+      <UniqueIdentifier>{5868b5a9-752c-4fbd-9baf-8764199a86b4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="NGL_LIB\bin">
+      <UniqueIdentifier>{eae25477-c262-457f-85c4-6587aa5b9417}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="NGL_LIB\include">
+      <UniqueIdentifier>{7c15d927-e008-44e6-bcc3-b7990f154a8c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="NGL_LIB\lib">
+      <UniqueIdentifier>{84faf613-804b-4e55-a92b-12efc59ef88f}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="framework.h">
@@ -27,9 +39,18 @@
     <ClInclude Include="PROJ_Game_K.h">
       <Filter>Arquivos de Cabeçalho</Filter>
     </ClInclude>
+    <ClInclude Include="Character.h">
+      <Filter>Arquivos de Cabeçalho</Filter>
+    </ClInclude>
+    <ClInclude Include="CNGLMain.h">
+      <Filter>NGL_LIB\include</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="PROJ_Game_K.cpp">
+      <Filter>Arquivos de Origem</Filter>
+    </ClCompile>
+    <ClCompile Include="Main.cpp">
       <Filter>Arquivos de Origem</Filter>
     </ClCompile>
   </ItemGroup>
