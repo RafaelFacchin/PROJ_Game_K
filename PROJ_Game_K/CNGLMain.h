@@ -4,7 +4,7 @@
 #ifndef CNGLMAIN_H
 #define CNGLMAIN_H
 
-#include "NGLObject.h"
+#include "CNGLObject.h"
 #include "NGLVideoManager.h"
 #include "NGLInputManager.h"
 #include "NGLTimeHandler.h"

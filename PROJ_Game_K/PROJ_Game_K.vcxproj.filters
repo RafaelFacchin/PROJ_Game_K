@@ -45,6 +45,9 @@
     <ClInclude Include="CNGLMain.h">
       <Filter>NGL_LIB\include</Filter>
     </ClInclude>
+    <ClInclude Include="CNGLObject.h">
+      <Filter>NGL_LIB\include</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="PROJ_Game_K.cpp">
@@ -52,6 +55,9 @@
     </ClCompile>
     <ClCompile Include="Main.cpp">
       <Filter>Arquivos de Origem</Filter>
+    </ClCompile>
+    <ClCompile Include="CNGLObject.cpp">
+      <Filter>NGL_LIB\include</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

@@ -5,7 +5,7 @@
 
 #include <windows.h>
 
-#include "NGL/NGLMain.h"
+#include "CNGLMain.h"
 #include "NGL/NGLLevel.h"
 #include "NGL/NGLPresentation.h"
 
