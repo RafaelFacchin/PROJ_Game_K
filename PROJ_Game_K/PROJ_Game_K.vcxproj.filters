@@ -48,6 +48,15 @@
     <ClInclude Include="CNGLObject.h">
       <Filter>NGL_LIB\include</Filter>
     </ClInclude>
+    <ClInclude Include="CNGLTimeHandler.h">
+      <Filter>NGL_LIB\include</Filter>
+    </ClInclude>
+    <ClInclude Include="CNGLStlFiles.h">
+      <Filter>NGL_LIB\include</Filter>
+    </ClInclude>
+    <ClInclude Include="CNGLInputManager.h">
+      <Filter>NGL_LIB\include</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="PROJ_Game_K.cpp">
@@ -57,6 +66,9 @@
       <Filter>Arquivos de Origem</Filter>
     </ClCompile>
     <ClCompile Include="CNGLObject.cpp">
+      <Filter>NGL_LIB\include</Filter>
+    </ClCompile>
+    <ClCompile Include="CNGLTimeHandler.cpp">
       <Filter>NGL_LIB\include</Filter>
     </ClCompile>
   </ItemGroup>

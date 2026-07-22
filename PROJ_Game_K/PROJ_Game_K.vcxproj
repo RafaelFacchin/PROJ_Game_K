@@ -128,15 +128,19 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="Character.h" />
+    <ClInclude Include="CNGLInputManager.h" />
+    <ClInclude Include="CNGLStlFiles.h" />
     <ClInclude Include="framework.h" />
     <ClInclude Include="CNGLMain.h" />
     <ClInclude Include="CNGLObject.h" />
     <ClInclude Include="PROJ_Game_K.h" />
     <ClInclude Include="Resource.h" />
     <ClInclude Include="targetver.h" />
+    <ClInclude Include="CNGLTimeHandler.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="CNGLObject.cpp" />
+    <ClCompile Include="CNGLTimeHandler.cpp" />
     <ClCompile Include="Main.cpp" />
     <ClCompile Include="PROJ_Game_K.cpp" />
   </ItemGroup>

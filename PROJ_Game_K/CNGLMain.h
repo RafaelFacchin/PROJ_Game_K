@@ -4,12 +4,12 @@
 #ifndef CNGLMAIN_H
 #define CNGLMAIN_H
 
+#include "CNGLInputManager.h"
 #include "CNGLObject.h"
-#include "NGLVideoManager.h"
-#include "NGLInputManager.h"
-#include "NGLTimeHandler.h"
-#include "NGLScene.h"
-#include "NGLSoundManager.h" 
+#include "CNGLScene.h"
+#include "CNGLSoundManager.h" 
+#include "CNGLTimeHandler.h"
+#include "CNGLVideoManager.h"
 
 class CNGLMain : public CNGLObject 
 {
