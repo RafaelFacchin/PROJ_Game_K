@@ -130,6 +130,7 @@
     <ClInclude Include="Character.h" />
     <ClInclude Include="CNGLInputManager.h" />
     <ClInclude Include="CNGLStlFiles.h" />
+    <ClInclude Include="CNGLVector.h" />
     <ClInclude Include="framework.h" />
     <ClInclude Include="CNGLMain.h" />
     <ClInclude Include="CNGLObject.h" />

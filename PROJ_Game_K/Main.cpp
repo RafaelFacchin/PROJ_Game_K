@@ -1,4 +1,5 @@
 //CLASSE MAIN - refatoracao e atualizacao de jogo KANGOO - by Copyright (C) 2003, Nology Softwares. Todos os direitos reservados
+// VERSION: 2.0
 
 #ifndef MAIN_CPP
 #define MAIN_CPP
@@ -101,7 +102,7 @@ static LRESULT CALLBACK Windowproc(HWND hwnd, UINT msg, WPARAM wParam, LPARAM lP
 					//aplicacao ganhou foco
 					//deve-se resetar o tempo da NGL p/ os OBJs do jogo
 					//mantenham-se na mesma posicao de quando a janela foi desativada
-					(g_pr_Main) ? g_pr_Main->TimeHandler.reset() : 0;
+					(g_pr_Main) ? g_pr_Main->TimeHandler.Reset() : 0;
 					g_bActive = true;
 				}
 			}
@@ -206,7 +207,7 @@ int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine
 	Main.AddScene(&Level);
 
 	//INICIALIZA o MAIN
-	if (!Main.initializa())
+	if (!Main.Initialize())
 	{
 		//RETORNA SE der erro
 		Main.Release();
@@ -237,7 +238,7 @@ int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine
 		else 
 		{
 			//SE a janela nao esta ativa, deve-se sempre reinicializar otempo do jogo
-			Main.TimeHandler.reset();
+			Main.TimeHandler.Reset();
 		}
 	}
 	DeleteObject(winclass.hbrBackground);

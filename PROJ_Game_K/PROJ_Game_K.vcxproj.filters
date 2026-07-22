@@ -57,6 +57,9 @@
     <ClInclude Include="CNGLInputManager.h">
       <Filter>NGL_LIB\include</Filter>
     </ClInclude>
+    <ClInclude Include="CNGLVector.h">
+      <Filter>NGL_LIB\include</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="PROJ_Game_K.cpp">
