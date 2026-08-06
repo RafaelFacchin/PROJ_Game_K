@@ -87,7 +87,7 @@ public:
 	//DESCR:	Inicializa a cena. Essa rotina deve ser reescrita na cena, para que se possa
 	//			criar todos os objetos e fazer inicializações necessárias.
 	//RETORNO: verdadeiro se a operação foi bem sucedida
-	virtual bool Initializa() = 0;
+	virtual bool Initialize() = 0;
 
 	//FUNC: EXECUTE
 	//DESCR:	Executa a cena. Essa rotina deve ser reescrita na cena, para que se possa

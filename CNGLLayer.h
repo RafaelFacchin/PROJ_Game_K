@@ -86,9 +86,53 @@ public:
 	//Deleta um sprite e o remove da layer.
 	//param p_Sprite : referência ao ponteiro para um sprite que será desalocado.
 	//return verdadeiro se a operação foi bem sucedida, caso contrário retorna falso.
+	bool DeleteSprite(CNGLSprite **p_Sprite);
 
+	//FAZ o Scroll (deslocamento) da layer.
+	//param cScroll: Tamanho do deslocamento.
+	//return:
+	void scroll(const CNGLVector& cScroll);
+
+	//CRIA os bricks da layer.
+	//param cNumBricks: Tamanho da Matriz de Bricks (ex: 40x40).
+	//return:
+	void CreateBricks(const CNGLVector& cNumBricks);
+
+	//APAGA todos os bricks da layer.
+	//param 
+	//return:
+	void ClearBricks();
+
+	//AJUSTA a configuração de um brick
+	//param cBrickPos : posição do brick no vetor de Bricks.
+	//param iImage : indice da imagem na cena.
+	//param iFrame : indice do quadro na imagem.
+	//return:
+	void SetBrick(const CNGLVector& cBrickPos, int iImage, int iFrame);
+
+	//CRIA uma layer com bricks a partir de um bitmap.
+	//param cp_chFileName: imagem que contém a disposição dos bricks.
+	//param pr_BrickConfigs: configuração de cada brick (onde se associa a cor do pixel com o brick correspondente).
+	//param iConfigCount: número de configurações de bricks.
+	//return:
+	void CreateBricksFromBitmap(const char * cp_chFileName, stCNGLBrickConfig, int iConfigCount);
+
+	//RETORNA o tamanho da layer em pixels
+	//param
+	//return: Vetor com o tamanho da layer em pixels(x,y)
+	CNGLVector GetLayerSize();
+
+	//RETORNA a posição na layer dada a posição no back buffer
+	//param BkBuffPos: Posição no back buffer
+	//return: Vetor com a posiçao na layer
+	CNGLVector GetLayerPos(const CNGLVector& BkBuffPos);
+
+	//RETORNA a posição no back buffer dada a posição na layer e o tamanho do quadro do objeto que utilizará esta posição.
+	//PARAM: LayerPos: Posição na layer
+	//PARAM: FrameSize: Tamanho do quadro do objeto
+	//RETURN:
+	CNGLVector GetbackBufferPos(const CNGLVector& LayerPos, const CNGLVector& FrameSize = CNGLVector(0.0f, o.of));
 
 };
-
 
 #endif
